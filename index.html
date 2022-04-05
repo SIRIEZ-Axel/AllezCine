@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/style/style.css">
+    <title>AllezCiné</title>
+</head>
+<body>
+    <header>
+    <h1>Allezciné</h1>
+        <ul class="menu">
+            <li><a class="menuItem" href="#">Trailer</a></li>
+            <li><a class="menuItem" href="#">New releases</a></li>
+            <li><a class="menuItem" href="#">Contact</a></li>
+        </ul>
+        <button class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </header>  
+
+    <!---->
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+    <!---->
+    
+    <footer>
+        <h2>Ready to get started?</h2>
+        <p>Sign up or contact us</p>
+        <button>Start free trial</button>
+        <button>Contact Us</button>
+    </footer>
+    <script src="https://kit.fontawesome.com/4f2b95033c.js" crossorigin="anonymous"></script>  
+    <script src="/Assets/JavaScript/allezcine.js" ></script>
+    <script src="/Assets/JavaScript/menuBurger.js" ></script>
+</body>
+</html>
