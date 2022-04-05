@@ -1,7 +1,7 @@
 const API_KEY = 'api_key=d645245eff2b1f60d18bc1ccf08032d2';
 const BASE_URL = 'https://api.themoviedb.org/3';
-const API_URL = BASE_URL + '/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&'+API_KEY;
-const IMG_URL = 'https://image.tmdb.org/t/p/w500';
+const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&'+API_KEY;
+const IMG_URL = 'https://image.tmdb.org/t/p/w185';
 const searchURL = BASE_URL + '/search/movie?'+API_KEY;
 
 getMovies(API_URL);
@@ -16,14 +16,11 @@ function getMovies(url) {
         }else{
             main.innerHTML= `<h1 class="no-results">No Results Found</h1>`
         }
-       
     })
-
 }
 
 function showMovies(data) {
     main.innerHTML = '';
-
     data.forEach(movie => {
         const {title, poster_path, vote_average, overview, id} = movie;
         const movieEl = document.createElement('div');
@@ -39,18 +36,9 @@ function showMovies(data) {
             <div class="overview">
                 <h3>Overview</h3>
                 ${overview}
-                <br/> 
-                <button class="know-more" id="${id}">Know More</button>
             </div>
         
         `
-
         main.appendChild(movieEl);
-
-        document.getElementById(id).addEventListener('click', () => {
-          console.log(id)
-          openNav(movie)
-        })
     })
 }
-
