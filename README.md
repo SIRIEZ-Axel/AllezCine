@@ -2,7 +2,7 @@
 
 <h3>Purpose</h3>
 
-This is the last project of ***The Hill***.</br>
+This is the last project of ***" The Hill "***.</br>
 Here we are in a team of 4 to build a site displaying several movies in different way by calling an **Api**.
 
 <h3>Technologie used</h3>
