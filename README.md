@@ -7,18 +7,18 @@ Here we are in a team of 4 to build a site displaying several movies in differen
 
 <h3>Technologie used</h3>
 <p>
-<img src="https://img.shields.io/badge/HTML-brightgreen">
-<img src="https://img.shields.io/badge/SASS-red">
-<img src="https://img.shields.io/badge/Javascript-blue">
+<img src="https://img.shields.io/badge/HTML-blue">
+<img src="https://img.shields.io/badge/SASS-brown">
+<img src="https://img.shields.io/badge/Javascript-brightgreen">
 <img src="https://img.shields.io/badge/-Figma-blueviolet">
+<img src="https://img.shields.io/badge/GIT-yellow">                
+<img src="https://img.shields.io/badge/GITHUB-yellow">
 </p>
                                                      
                                                        
 <p>
 <img src="https://img.shields.io/badge/API-Fetch-blue">
 <img src="https://img.shields.io/badge/JS-DOM-blue">
-<img src="https://img.shields.io/badge/GIT-yellow">
-<img src="https://img.shields.io/badge/GITHUB-yellow">                
 </p>
           
 <h3>Design used</h3>                                                     
