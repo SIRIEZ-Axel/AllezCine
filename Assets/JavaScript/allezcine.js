@@ -20,7 +20,6 @@ function getMovies(url) {
 }
 
 function showMovies(data) {
-    main.innerHTML = '';
     data.forEach(movie => {
         const {title, poster_path, vote_average, overview, id} = movie;
         const movieEl = document.createElement('div');
@@ -34,9 +33,7 @@ function showMovies(data) {
             <div class="overview">
                 <h3>Overview</h3>
                 ${overview}
-            </div>
-        
-        `
+            </div>`
         main.appendChild(movieEl);
     })
 }
