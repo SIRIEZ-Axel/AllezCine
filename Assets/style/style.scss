@@ -18,7 +18,7 @@
         text-decoration: none;
     }  
     .hamburger {
-        background-color: transparent;
+        background-color: #030F26;
         color: white;
         position: fixed;
         z-index: 100;
@@ -79,21 +79,6 @@
 
         h3{
             margin-top: 0;
-        }
-        span{
-            background-color: var(--primary-color);
-            padding: 0.25rem 0.5rem;
-            border-radius: 3px;
-            font-weight: bold;
-        }
-        span.green{
-            color:lightgreen;
-        }
-        span.orange{
-            color:orange;
-        }
-        span.red{
-            color:red;
         }
     }
     
@@ -285,6 +270,27 @@
     /***********FOOTER*********/
     footer{
         padding-top: 90%;
+        font-size: 32px;
+        text-align: center;
+        background-color:#030F26;
+        ;
+        h2{
+            
+            font-weight: 700,bold;
+        }
+        p{
+            font-size: 32px;
+        }
+        button{
+            height: 58px;
+            width: 324px;
+            left: 0px;
+            top: 0px;
+            border-radius: 5px;
+            .contact{
+                margin-top: 1124px;;
+            }
+        }
     }
 }
 
