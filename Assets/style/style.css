@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 @media only screen and (max-width: 600px) {
   body {
     background-color: #030F26;
@@ -10,49 +9,60 @@
   }
   header {
     background-color: #030F26;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    /**MENU BURGER**/
+    /* Sidenav menu links */
+    /* Active class */
+    /* Close btn */
   }
-  /**MENU BURGER**/
-  .menuItem {
-    display: block;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-  }
-  .hamburger {
-    background-color: #030F26;
-    color: white;
+  header .sidenav {
+    height: 100%;
+    width: 250px;
     position: fixed;
-    z-index: 100;
-    top: 25px;
-    right: 1rem;
-    padding: 4px;
-    cursor: pointer;
-  }
-  .closeIcon {
-    display: none;
-  }
-  .menu {
-    position: fixed;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
+    z-index: 1;
     top: 0;
+    right: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+  }
+  header .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  header .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .sidenav a:hover {
+    color: #100f0f;
+  }
+  header .sidenav.active {
     left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
   }
-  .showMenu {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  header .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
   }
-  /********************/
+  header .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #e7dede;
+    margin: 6px 0;
+  }
+  /****************************/
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,7 +236,8 @@
     /* Transition effects on hover (color) */
   }
   /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
+  .overlay a:hover,
+  .overlay a:focus {
     color: #f1f1f1;
   }
   /* Position the close button (top right corner) */
@@ -297,7 +308,7 @@
     background-color: #030F26;
   }
   footer h2 {
-    font-weight: 700,bold;
+    font-weight: 700, bold;
   }
   footer p {
     font-size: 32px;
@@ -308,268 +319,21 @@
     left: 0px;
     top: 0px;
     border-radius: 5px;
-  }
-  footer button .contact {
-    margin-top: 1124px;
-  }
-}
-
-/*******************FOR DESK*******************************/
-@media only screen and (min-width: 600px) {
-  main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .movie {
-    width: 300px;
-    margin: 1rem;
-    border-radius: 3px;
-    -webkit-box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
-            box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
-    background-color: var(--secondary-color);
-    position: relative;
-    overflow: hidden;
-  }
-  .movie img {
-    width: 100%;
-  }
-  .movie-info {
-    color: #eee;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0.5rem 1rem 1rem;
-    letter-spacing: 0.5px;
-  }
-  .movie-info h3 {
-    margin-top: 0;
-  }
-  .movie-info span {
-    background-color: var(--primary-color);
-    padding: 0.25rem 0.5rem;
-    border-radius: 3px;
-    font-weight: bold;
-  }
-  .movie-info span.green {
-    color: lightgreen;
-  }
-  .movie-info span.orange {
-    color: orange;
-  }
-  .movie-info span.red {
-    color: red;
-  }
-  .overview {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    padding: 1rem;
-    max-height: 100%;
-    -webkit-transform: translateY(101%);
-            transform: translateY(101%);
-    -webkit-transition: -webkit-transform 0.3s ease-in;
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
-  }
-  .movie:hover .overview {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  #tags {
-    width: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 10px auto;
-  }
-  .tag {
-    color: white;
-    padding: 10px 20px;
-    background-color: orange;
-    border-radius: 50px;
-    margin: 5px;
-    display: inline-block;
     cursor: pointer;
   }
-  .tag .highlight {
-    background-color: red;
-  }
-  .no-results {
+  footer .contact {
     color: white;
+    background-color: #030F26;
+    margin-top: 10px;
+    border: 1px solid white;
   }
-  .pagination {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 10px 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: white;
+  footer .contact:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
   }
-  .page {
-    padding: 20px;
-    cursor: pointer;
-  }
-  .page .disabled {
-    cursor: not-allowed;
-    color: grey;
-  }
-  .current {
-    padding: 10px 20px;
-    border-radius: 50%;
-    border: 5px solid orange;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .know-more {
-    background-color: orange;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border: 0;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin-top: 5px;
-  }
-  /* The Overlay (background) */
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 100%;
-    width: 0;
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: black;
-    /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/opacity */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 10%;
-    /* 25% from the top */
-    width: 100%;
-    /* 100% width */
-    text-align: center;
-    /* Centered text/links */
-    margin-top: 30px;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    /* Display block instead of inline */
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    /* Transition effects on hover (color) */
-  }
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-}
-
-@media only screen and (min-width: 600px) and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .embed.hide {
-    display: none;
-  }
-  .embed.show {
-    display: inline-block;
-  }
-  .arrow {
-    position: absolute;
-    font-size: 40px;
-  }
-  .arrow.left-arrow {
-    top: 50%;
-    left: 5%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .arrow.right-arrow {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 5%;
-  }
-  .dots {
-    margin-top: 30px;
-  }
-  .dots .dot {
-    padding: 5px 15px;
-    border-radius: 50%;
-    border: 5px solid var(--secondary-color);
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 5px;
-  }
-  .dots .dot.active {
-    border-color: orange;
-  }
-  /********************/
-  /***********FOOTER*********/
-  footer {
-    padding-top: 90%;
+  footer .start:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,15 +10,22 @@
 <body>
     <header>
     <h1>Allezciné</h1>
-        <ul class="menu">
-            <li><a class="menuItem" href="#">Trailer</a></li>
-            <li><a class="menuItem" href="#">New releases</a></li>
-            <li><a class="menuItem" href="#">Contact</a></li>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+        <ul>
+          <li><a href="#">Trailer</a></li>
+          <li><a href="#">New releases</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-        <button class="hamburger">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark"></i>
-        </button>
+      </div>
+      
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
     </header>  
 
     <!-------------------------------------------------------------------->
@@ -39,10 +46,10 @@
     <footer>
         <h2>Ready to get started?</h2>
         <p>Sign up or contact us</p>
-        <button>Start free trial</button>
-        <button>Contact Us</button>
+        <button class="start" >Start free trial</button>
+        <button class="contact" >Contact Us</button>
     </footer>
-    <script src="https://kit.fontawesome.com/4f2b95033c.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/4f2b95033c.js"></script>
     <script src="/Assets/JavaScript/allezcine.js" ></script>
     <script src="/Assets/JavaScript/menuBurger.js" ></script>
 </body>
