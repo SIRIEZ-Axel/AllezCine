@@ -26,4 +26,4 @@ Here we are in a team of 4 to build a site displaying several movies in differen
 
 <h2>Collaborators</h2>     
 
-***Fidelys, Phillipe, Matthias, Axel***
+[Fidelys](https://github.com/FidelysNadison), [Phillipe](https://github.com/philouLeF), [Matthias](https://github.com/MatthiasUrgu)
