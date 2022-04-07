@@ -1,0 +1,143 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  width: 100px;
+}
+
+.palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bleuFonce {
+  color: white;
+  background-color: #030F26;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -30px;
+  border: double 4px white;
+  margin: 0;
+}
+
+.bleuMoinsFonce {
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -30px;
+  border: double 4px white;
+  background-color: #08254A;
+}
+
+.orange {
+  color: black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -30px;
+  border: double 4px white;
+  background-color: #FC2525;
+}
+
+.jaune {
+  color: black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -30px;
+  border: double 4px white;
+  background-color: #EBFF00;
+}
+
+.codesCouleur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 25px;
+}
+
+.codeBleuFonce {
+  color: #030F26;
+}
+
+.codeBleuMoinsFonce {
+  color: #08254A;
+}
+
+.codeJaune {
+  color: #EBFF00;
+}
+
+.codeOrange {
+  color: #FC2525;
+}
+
+.fontBlack {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  width: auto;
+  color: black;
+  background-color: white;
+}
+
+.fontWhite {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  width: auto;
+  color: white;
+  background-color: black;
+}
+
+.orangeButton {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  width: auto;
+}
+
+.buttons {
+  width: 70%;
+  border-radius: 10em;
+  background-color: #030F26;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.orangeButton {
+  color: white;
+  background-color: #FC2525;
+  border: solid 1px #FC2525;
+  border-radius: 0.5em;
+  margin: 15px;
+}
+
+.fullButton {
+  color: #030F26;
+  background-color: white;
+  border-radius: 0.5em;
+  margin: 15px;
+  border: solid 1px white;
+}
+
+.lightButton {
+  color: white;
+  background-color: #030F26;
+  border: solid 1px white;
+  border-radius: 0.5em;
+  margin: 15px;
+}
+/*# sourceMappingURL=styleguide.css.map */

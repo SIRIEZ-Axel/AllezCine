@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    width: 100px;
+}
+
+.palette {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin cercle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -30px;
+    border: double 4px white;
+}
+
+.bleuFonce {
+    color: white;
+    background-color: #030F26;
+    @include cercle;
+    margin: 0;
+}
+
+.bleuMoinsFonce {
+    color: white;
+    @include cercle;
+    background-color: #08254A;
+}
+
+.orange {
+    color: black;
+    @include cercle;
+    background-color: #FC2525;
+}
+
+.jaune {
+    color: black;
+    @include cercle;
+    background-color: #EBFF00;
+}
+
+.codesCouleur {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.codeBleuFonce {
+    color: #030F26;
+}
+.codeBleuMoinsFonce {
+    color: #08254A;
+}
+.codeJaune {
+    color: #EBFF00;
+}
+.codeOrange {
+    color: #FC2525;
+}
+
+@mixin font {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    width: auto
+}
+
+.fontBlack {
+    @include font;
+    color: black;
+    background-color: white;
+}
+
+.fontWhite {
+    @include font;
+    color: white;
+    background-color: black;
+}
+
+.orangeButton {
+    @include font;
+}
+
+.buttons {
+    width: 70%;
+    border-radius: 10em;
+    background-color: #030F26;
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin button {
+    border-radius: 0.5em;
+    margin: 15px;
+}
+
+.orangeButton {
+    color: white;
+    background-color: #FC2525;
+    border: solid 1px #FC2525;
+    @include button;
+}
+
+.fullButton {
+    color: #030F26;
+    background-color: white;
+    @include button;
+    border: solid 1px white;
+}
+
+.lightButton {
+    color: white;
+    background-color: #030F26;
+    border: solid 1px white;
+    @include button;
+}
