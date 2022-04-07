@@ -19,15 +19,15 @@ function getMovies(url) {
 }
 
 function showMovies(data) {
-    main.innerHTML = '';
+    carousel.innerHTML = '';
     data.forEach(movie => {
         const {title, poster_path, vote_average, overview} = movie;
         const movieEl = document.createElement('span');
         movieEl.classList.add('movie');
         movieEl.innerHTML = `
-            <img class="movie-poster" src="${poster_path? IMG_URL + poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}">
+		  <img class="carousel__photo initial" src="${poster_path? IMG_URL + poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}"" >
 
-            <div class="movie-info">
+          <div class="movie-info">
                 <span class="${(vote_average)}">${vote_average}</span>
             </div>
 
@@ -37,6 +37,6 @@ function showMovies(data) {
                 <button class="know-more-btn" id="over-btn">Know more</button>
             </div>
         `
-        main.appendChild(movieEl);
+        carousel.appendChild(movieEl);
     })
 }
