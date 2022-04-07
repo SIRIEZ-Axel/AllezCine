@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.cine-life .button.is-primary {
+  color: #030F26;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.cine-life .navbar {
+  background-color: #030F26;
+}
+
+.cine-life .marketing {
+  margin-top: 25px;
+  background-color: #08254A;
+}
+
+.cine-life .marketing p {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

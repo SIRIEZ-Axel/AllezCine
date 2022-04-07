@@ -1,3 +1,24 @@
-body{
-    
+@import "./variable.scss";
+@import "./button.scss";
+.cine-life{
+    .navbar {
+     background-color:$ternary;  
+    }
+    .marketing {
+
+        margin-top: 25px;
+        background-color: $primmary;
+        p{
+            color: $text-color;
+        }
+    }
+
 }
+
+
+
+
+
+
+
+

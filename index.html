@@ -3,21 +3,96 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hello Bulma!</title>
+		<title>Allez Ciné</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
 	</head>
-	<body>
-		<!-- Start Hero Carousel -->
+	<body class="cine-life">
+        <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img  src="assets/img/logo1.png" alt="Bulma: a modern CSS framework based on Flexbox">
+            <p class="has-text-white-bis">Allez Ciné</p>
+          </a>
+          <div class="navbar-burger has-text-white-bis" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-end">
+              
+            <a class="navbar-item" href="#">
+              <!-- Espace vide sinon apparait quand on est en grand format -->
+            </a>
+            
+            <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-item" href="#">
+                    Home
+                  </a>
+                <a class="navbar-item" href="#">
+                    Gallery
+                  </a>
+                <a class="navbar-item" href="#">
+                Gallery
+              </a>
+              
+                <a class="navbar-item" href="#">
+                  Note
+                </a>
+                <a class="navbar-item" href="#">
+                  RePlay
+                </a>
+                <a class="navbar-item" href="#">
+                  Telechargement
+                </a>
+                <a class="navbar-item" href="#">
+                    Profil
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Reglage
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      
+		<!-- Start Hero Carousel --------------------------------------->
 		<section class="hero is-medium has-carousel">
+            <div class="container release has-text-white-bis">
+                New releases >
+            </div><div class="container release has-text-white-bis">
+                New releases >
+            </div><div class="container release has-text-white-bis">
+                New releases >
+            </div><div class="container release has-text-white-bis">
+                New releases >
+            </div><div class="container release has-text-white-bis">
+                New releases >
+            </div><div class="container release has-text-white-bis">
+        New releases >
+    </div>
 			<div id="carousel-demo" class="hero-carousel">
 				<div class="item-1">
 					<!-- Slide Content -->
-                    <img src="/assets/img/AAAABXUomrsE7xZK2W-gr_hCwRsAVSWD2sYGj_IE8jHnRXpn0W-RQrJv1ECu8FhvSQ9vEUiEhQNdYalu48gAGcvfEOwmZ5R-.jpg" alt="">
+                    <img  src="/assets/img/AAAABXUomrsE7xZK2W-gr_hCwRsAVSWD2sYGj_IE8jHnRXpn0W-RQrJv1ECu8FhvSQ9vEUiEhQNdYalu48gAGcvfEOwmZ5R-.jpg" alt="">
 				</div>
 				<div class="item-2">
                     <!-- Slide Content -->
-                    <img src="/assets/img/AAAABXUomrsE7xZK2W-gr_hCwRsAVSWD2sYGj_IE8jHnRXpn0W-RQrJv1ECu8FhvSQ9vEUiEhQNdYalu48gAGcvfEOwmZ5R-.jpg" alt="">
+                    <img src="/assets/img/AAAABXUomrsE7xZK2W-gr_hCwRsAVSWD2sYGj_IE8jHnRXpn0W-RQrJv1ECu8FhvSQ9vEUiEhQNdYalu48gAGcvfEOwmZ5R-.jpg"  alt="">
 				</div>
 				<div class="item-3">
                     <!-- Slide Content -->
@@ -29,13 +104,32 @@
 			<div class="hero-foot"></div>
 		</section>
 		<!-- End Hero Carousel -->
+       
+     <section class="marketing">
+         <div class="columns is-centered">
+             <div class="column is-6">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic id amet tempora facilis blanditiis natus cum in perspiciatis earum! Unde nisi officia atque amet sit ipsam pariatur delectus possimus.
+
+                 </p>
+             </div>
+             <div class="column is-4 ">
+                 <button class="button is-primary m-auto">Start free trial</button>
+                 <button class="button is-danger">Start free trial</button>
+             </div>
+            
+         </div>
+     </section>   
+
 
 		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 		<script>
+
+        
 			bulmaCarousel.attach('#carousel-demo', {
 				slidesToScroll: 1,
 				slidesToShow: 1
 			});
 		</script>
+        <script src="/assets/js/app.js"></script>
 	</body>
 </html>

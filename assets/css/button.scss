@@ -1,0 +1,12 @@
+@import "./variable.scss";
+
+
+.cine-life {
+    .button {
+        &.is-primary {
+            color: $ternary;
+            background-color: $text-color;
+            border: 1px solid black;
+        }
+    }
+}
