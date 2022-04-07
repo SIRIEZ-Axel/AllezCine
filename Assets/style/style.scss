@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+    *{
+        font-family: sans-serif;
+    }
     body {
         background-color: #030F26;
         color: white;
@@ -18,13 +21,13 @@
         }
         /**MENU BURGER**/
         .sidenav {
-            height: 100%;
+            
             width: 250px;
             position: fixed;
             z-index: 1;
-            top: 0;
+            top: 1.3rem;
             right: -250px;
-            background-color: #e8e8e8;
+            background-color: transparent;
             padding-top: 60px;
         }
 
@@ -39,7 +42,7 @@
             padding: 8px 8px 8px 32px;
             text-decoration: none;
             font-size: 25px;
-            color: #818181;
+            color: rgb(226, 93, 93);
             display: block;
             transition: 0.3s;
         }
@@ -56,9 +59,9 @@
         /* Close btn */
         .sidenav .close {
             position: absolute;
-            top: 0;
+            top: 0rem;
             right: 25px;
-            font-size: 36px;
+            font-size: 56px;
         }
 
         .burger-icon span {
