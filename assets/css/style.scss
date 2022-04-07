@@ -1,19 +1,56 @@
 @import "./variable.scss";
 @import "./button.scss";
+
 .cine-life{
-    .navbar {
-     background-color:$ternary;  
+    background-color:$ternary;
+    margin: 0;
+
+    .container{
+        margin:25px;
     }
+    
+
+    .float-right{
+        z-index: 1;
+        display:flex;
+        justify-content: flex-end;
+         }
+    .navbar {
+            display:none;
+            background-color:$ternary;
+            z-index: -1;  
+        }
     .marketing {
 
         margin-top: 25px;
         background-color: $primmary;
-        p{
-            color: $text-color;
-        }
+            p{
+                color: $text-color;
+            }
     }
 
+    .title{
+            font-size: 24px;
+            color:$text-color;}
+
+    
+    .footer {
+            background-color: $ternary;
+            color: $text-color;
+            font-size:9px;
+
+            .li{
+                padding-top: 15px;
+            }
+            
+        
 }
+
+}
+
+
+
+
 
 
 

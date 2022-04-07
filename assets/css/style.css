@@ -4,8 +4,29 @@
   border: 1px solid black;
 }
 
-.cine-life .navbar {
+.cine-life {
   background-color: #030F26;
+  margin: 0;
+}
+
+.cine-life .container {
+  margin: 25px;
+}
+
+.cine-life .float-right {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cine-life .navbar {
+  display: none;
+  background-color: #030F26;
+  z-index: -1;
 }
 
 .cine-life .marketing {
@@ -15,5 +36,20 @@
 
 .cine-life .marketing p {
   color: white;
+}
+
+.cine-life .title {
+  font-size: 24px;
+  color: white;
+}
+
+.cine-life .footer {
+  background-color: #030F26;
+  color: white;
+  font-size: 9px;
+}
+
+.cine-life .footer .li {
+  padding-top: 15px;
 }
 /*# sourceMappingURL=style.css.map */
