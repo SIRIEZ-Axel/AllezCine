@@ -1,11 +1,11 @@
 <h1 align="center">AllezCiné</h1>
 
-<h3>Purpose</h3>
+<h2>Purpose</h2>
 
 This is the last project of ***" The Hill "***.</br>
 Here we are in a team of 4 to build a site displaying several movies in different way by calling an **Api**.
 
-<h3>Technologie used</h3>
+<h2>Technologie used</h2>
 <p>
 <img src="https://img.shields.io/badge/HTML-blue">
 <img src="https://img.shields.io/badge/SASS-brown">
@@ -21,9 +21,9 @@ Here we are in a team of 4 to build a site displaying several movies in differen
 <img src="https://img.shields.io/badge/JS-DOM-blue">
 </p>
           
-<h3>Design used</h3>                                                     
+<h2>Design used</h2>                                                     
 <img src="https://user-images.githubusercontent.com/98603007/161716479-61b82931-6fcc-4575-a30b-f4024f07aece.png" alt="mockup" title="image Title" width="700"/>  
 
-<h3>Collaborators</h3>     
+<h2>Collaborators</h2>     
 
 ***Fidelys, Phillipe, Matthias, Axel***
