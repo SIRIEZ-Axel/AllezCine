@@ -51,7 +51,7 @@
     color: #100f0f;
   }
   header .sidenav.active {
-    left: 0;
+    right: 0;
   }
   header .sidenav .close {
     position: absolute;
