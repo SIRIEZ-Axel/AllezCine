@@ -35,9 +35,7 @@
 }
 
 .cine-life .navbar {
-  display: none;
   background-color: #030F26;
-  z-index: -1;
 }
 
 .cine-life .marketing {

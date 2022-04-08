@@ -23,9 +23,9 @@
         justify-content: flex-end;
          }
     .navbar {
-            display:none;
+            
             background-color:$ternary;
-            z-index: -1;  
+            
         }
     .marketing {
 
@@ -50,8 +50,10 @@
 
     .films{
             display: flex;
-            width:190px;
-            img{padding-left: 30px;}
+              width:190px; 
+            img{
+                padding-left: 30px;
+                } 
         }
 
     
