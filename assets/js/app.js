@@ -1,41 +1,67 @@
 const API_KEY = 'api_key=d645245eff2b1f60d18bc1ccf08032d2';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&'+API_KEY;
-const IMG_URL = 'https://image.tmdb.org/t/p/w500';
+const IMG_URL = 'https://image.tmdb.org/t/p/original';
 const searchURL = BASE_URL + '/search/movie?'+API_KEY;
 
-getMovies(API_URL);
 
-function getMovies(url) {
-  lastUrl = url;
-    fetch(url).then(res => res.json()).then(data => {
-        console.log(data.results)
-        if(data.results.length !== 0){
-            showMovies(data.results);
-        }else{
-            main.innerHTML= `<h1 class="no-results">No Results Found</h1>`
-        }
+(function ($) {
+  fetch(API_URL)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+
+      const {results} = data;
+
+      const featuredMovie = results.filter(
+        (movie) => movie.vote_average > 7
+      );
+
+      featuredMovie.forEach((element) => {
+        const {poster_path, title, vote_average, overview} = element;
+
+        $(".container .list").append(`
+        <div class="info">
+            <div class="thumbnail" width="500px">
+            <img class="carousel_photo" src="${poster_path? IMG_URL + poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}"">
+        </div>
+          <div class="info-movie">
+              <div class="movie-title"><a href="">${title}</a></div>
+              <div class="top-average">${vote_average}</div>
+              <div class="overview">${overview}</div>
+          </div>
+        </div>
+      `);
+      });
     })
-}
-
-function showMovies(data) {
-    carousel.innerHTML = '';
-    data.forEach(movie => {
-        const {title, poster_path, vote_average, overview} = movie;
-        const movieEl = document.createElement('span');
-        movieEl.classList.add('movie');
-        movieEl.innerHTML = `
-		  <img class="carousel__photo initial" src="${poster_path? IMG_URL + poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}"" >
-
-          <div class="movie-info">
-                <span class="${(vote_average)}">${vote_average}</span>
-            </div>
-
-            <div class="overview">
-                <h3>Overview</h3>
-                <p class="movie-overview">${overview}</p>
-            </div>
-        `
-        carousel.appendChild(movieEl);
-    })
-}
+    .then(() => {
+      $(".container .list").slick({
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $(".btn-prev"),
+        nextArrow: $(".btn-next"),
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "30px",
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 625,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "30px",
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+})(jQuery);
