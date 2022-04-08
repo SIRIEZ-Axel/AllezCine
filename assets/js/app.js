@@ -1,3 +1,23 @@
+//***************************** */
+// MENU HAMBURGER
+//******************************* */
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.
+    addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
+
+//***************************** */
+// PREMIER CAROUSEL
+//******************************* */
 const API_KEY = 'api_key=d645245eff2b1f60d18bc1ccf08032d2';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&'+API_KEY;
