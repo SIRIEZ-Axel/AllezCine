@@ -5,28 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/Assets/JavaScript/menuBurger.js">
     <title>AllezCiné</title>
 </head>
-<body>
-    <header>
-    <h1>Allezciné</h1>
-        <div id="mySidenav" class="sidenav">
-            <a id="closeBtn" href="#" class="close">&times;</a>
-        <ul>
-          <li><a href="#">Trailer</a></li>
-          <li><a href="#">New releases</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+<body class="cine-life" >
+  <!-- NavBar hamburger --------------------------->
+ <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+   
+  
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+        </div> <nav class="navbar ">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+              <img  src="/Assets/img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox">
+              <p class="has-text-white-bis">Allez Ciné</p>
+            </a>
+            <div class="navbar-burger has-text-white-bis" data-target="navbarExampleTransparentExample">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
       
-      <a href="#" id="openBtn">
-        <span class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </a>
-    </header>  
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+      
+              <a class="navbar-item" href="#">
+                <!-- Espace vide sinon apparait quand on est en grand format -->
+              </a>
+      
+              <div class="navbar-item has-dropdown is-hidden">
+                  <a class="navbar-item" href="#">
+                      Home
+                    </a>
+                  <a class="navbar-item" href="#">
+                      Gallery
+                    </a>
+                  <a class="navbar-item" href="#">
+                  Gallery
+                </a>
+      
+                  <a class="navbar-item" href="#">
+                    Note
+                  </a>
+                  <a class="navbar-item" href="#">
+                    RePlay
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Telechargement
+                  </a>
+                  <a class="navbar-item" href="#">
+                      Profil
+                    </a>
+                    <a class="navbar-item" href="#">
+                      Reglage
+                    </a>
+      
+                </div>
+              </div>
+            </div>
+      
+            <div class="navbar-end">
+              <div class="navbar-item">
+      
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</nav>
+  
 
     <!-------------------------------------------------------------------->
     <div id="tags"></div>
@@ -50,7 +111,7 @@
         <button class="contact" >Contact Us</button>
     </footer>
     <script src="https://kit.fontawesome.com/4f2b95033c.js"></script>
-    <script src="/Assets/JavaScript/allezcine.js" ></script>
-    <script src="/Assets/JavaScript/menuBurger.js" ></script>
+    <script src="/Assets/js/allezcine.js" ></script>
+    <script src="/Assets/js/menuBurger.js" ></script>
 </body>
 </html>
