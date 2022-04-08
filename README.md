@@ -5,6 +5,11 @@
 This is the last project of ***" The Hill "***.</br>
 Here we are in a team of 4 to build a site displaying several movies in different way by calling an **Api**.
 
+<h2>The page</h2>
+
+[You can click here](https://siriez-axel.github.io/AllezCine/)
+
+
 <h2>Technologie used</h2>
 <p>
 <img src="https://img.shields.io/badge/HTML-blue">
