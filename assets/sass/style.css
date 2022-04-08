@@ -15,7 +15,7 @@ header a {
 }
 
 header .navbar {
-  min-height: 70px;
+  min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +26,7 @@ header .navbar {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 24px;
+  margin-bottom: 5px;
 }
 
 header .navbar .nav-branding {
@@ -93,7 +94,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
-  max-width: 1200px;
 }
 
 .main {
@@ -241,7 +241,7 @@ body {
   header .navbar .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 39px;
     gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
