@@ -34,7 +34,6 @@ function showMovies(data) {
             <div class="overview">
                 <h3>Overview</h3>
                 <p class="movie-overview">${overview}</p>
-                <button class="know-more-btn" id="over-btn">Know more</button>
             </div>
         `
         carousel.appendChild(movieEl);
