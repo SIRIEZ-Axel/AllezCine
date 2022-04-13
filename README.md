@@ -12,18 +12,18 @@ Here we are in a team of 4 to build a site displaying several movies in differen
 
 <h2>Technologie used</h2>
 <p>
-<img src="https://img.shields.io/badge/HTML-blue">
-<img src="https://img.shields.io/badge/SASS-brown">
-<img src="https://img.shields.io/badge/Javascript-brightgreen">
-<img src="https://img.shields.io/badge/-Figma-blueviolet">
-<img src="https://img.shields.io/badge/GIT-yellow">                
-<img src="https://img.shields.io/badge/GITHUB-yellow">
+<img src="https://img.shields.io/badge/HTML-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/SASS-brown?style=for-the-badge">
+<img src="https://img.shields.io/badge/Javascript-brightgreen?style=for-the-badge">
+<img src="https://img.shields.io/badge/-Figma-blueviolet?style=for-the-badge">
+<img src="https://img.shields.io/badge/GIT-yellow?style=for-the-badge">                
+<img src="https://img.shields.io/badge/GITHUB-yellow?style=for-the-badge">
 </p>
                                                      
                                                        
 <p>
-<img src="https://img.shields.io/badge/API-Fetch-blue">
-<img src="https://img.shields.io/badge/JS-DOM-blue">
+<img src="https://img.shields.io/badge/API-Fetch-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/JS-DOM-blue?style=for-the-badge">
 </p>
           
 <h2>Design used</h2>                                                     
@@ -31,4 +31,4 @@ Here we are in a team of 4 to build a site displaying several movies in differen
 
 <h2>Collaborators</h2>     
 
-[Fidelys](https://github.com/FidelysNadison), [Phillipe](https://github.com/philouLeF), [Matthias](https://github.com/MatthiasUrgu)
+[Fidelys](https://github.com/FidelysNadison) - [Phillipe](https://github.com/philouLeF) - [Matthias](https://github.com/MatthiasUrgu)
