@@ -7,7 +7,7 @@ Here we are in a team of 4 to build a site displaying several movies in differen
 
 <h2>The page</h2>
 
-[You can click here](https://siriez-axel.github.io/AllezCine/)
+[Click to see the project](https://siriez-axel.github.io/AllezCine/)
 
 
 <h2>Technologie used</h2>
